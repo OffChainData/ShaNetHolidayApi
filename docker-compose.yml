@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  shanetholidayapi:
+    container_name: shanet
+    image: ${DOCKER_REGISTRY}shanetholidayapi
+    ports:
+      - 8190:80
+    build:
+      context: .
+      dockerfile: Dockerfile
+      
